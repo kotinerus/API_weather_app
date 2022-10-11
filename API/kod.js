@@ -10,7 +10,7 @@ $(document).ready(function(){
 })
 function wyszukanie(){
     x=document.getElementById('miasto').value;
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='+x+'&appid=ff83ff9006e5d926d532943cb8e55bb1&units=metric')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+x+'&appid=2782c2ecb1277dd12c78a9802ca1b395&units=metric')
     .then(res => res.json())
     .then((out) => {
       console.log(out.main.temp);
